@@ -28,15 +28,24 @@ public class Slider1 {
         
         JSlider slider=new JSlider();
         //set min to 0
+        slider.setMinimum(0);
         //max to 100
+        slider.setMaximum(100);
         //value to 5
+        //設定初始位置
+        slider.setValue(5);
         //paintTicks to true
+        slider.setPaintTicks(true);
         //paintTracks to true
+        slider.setPaintTrack(true);
+        //paintLabels to true
+        slider.setPaintLabels(true);
         //minorTickSpacing to 10
-        //majorTickSpacing to 
-        //
+        slider.setMinorTickSpacing(10);
+        //majorTickSpacing to 20
+        slider.setMajorTickSpacing(20);
         //and then add the slider to frame
-        
+        frame.add(slider);
         //////////////////////////////////
         
         frame.setVisible(true);
